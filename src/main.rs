@@ -1,6 +1,7 @@
 extern crate clap;
 use clap::{Arg, App};
 mod simple_forward;
+mod colors;
 
 fn run_project(name: &str, func: fn()) {
     println!("\n================== Running: {} ==================\n\n", name);
@@ -25,7 +26,8 @@ fn main() {
     
 
     match name {
-        "simple_forward" => run_project(&name, simple_forward::multi_to_one), // simple_forward::multi_to_one(),
-        _ => println!("sorry there is no project called {}", name)
+        "simple_forward" => run_project(&name, simple_forward::multi_to_multi_no_hidden_layers), // simple_forward::multi_to_one(),
+        // Add a new project here!
+        _ => println!("\n  sorry there is no project called {}", name)
     };
 }

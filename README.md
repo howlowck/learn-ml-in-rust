@@ -10,7 +10,7 @@ The goal is to grok all the concept in the book, and at the same time port all t
 ## To Run
 1. Install Rust
 1. Clone the Repo
-1. Run `cargo run -- <PROJECT_NAME>` in the project root
+1. Run `cargo run <PROJECT_NAME>` in the project root
 
 ## Projects
-1. `simple_forward` - a simple forward evaluation
+1. `simple_forward` - a simple forward evaluation (multi-input, multi-output forward propagation, no Hidden Layers)
